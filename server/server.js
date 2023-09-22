@@ -39,7 +39,7 @@ app.get('/posts/:id', async (req, res) => {
   const post = await Post.findById(req.params.id);
   res.send(post);
 });
-  
+
 //create new post
 app.post('/posts', async (req, res) => {
   const newPost = new Post(req.body);
@@ -52,4 +52,4 @@ app.delete('/posts/:id', async (req, res) => {
   res.status(200).send('Post Deleted');
 });
 
-app.listen(5550, () => console.log('Server started on port 5500'));
+app.listen(5500, () => console.log('Server started on port 5500'));

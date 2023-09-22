@@ -34,6 +34,7 @@ const NewPostPage = () => {
               name="title"
               placeholder="title"
               onChange={handleChange}
+              required
             />
           </Form.Group>
           <Form.Group>
@@ -43,6 +44,7 @@ const NewPostPage = () => {
               name="Author"
               placeholder="Author"
               onChange={handleChange}
+              required
             />
           </Form.Group>
           <Form.Group>
@@ -52,6 +54,7 @@ const NewPostPage = () => {
               name="image"
               placeholder="Image URL"
               onChange={handleChange}
+              required
             />
           </Form.Group>
           <Form.Group>
@@ -62,6 +65,7 @@ const NewPostPage = () => {
               name="content"
               placeholder="content"
               onChange={handleChange}
+              required
             />
           </Form.Group>
           <Button variant="primary" type="submit">
