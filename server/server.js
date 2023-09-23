@@ -44,6 +44,7 @@ app.get('/posts/:id', async (req, res) => {
 app.post('/posts', async (req, res) => {
   const newPost = new Post(req.body);
   const savedPost = await newPost.save();
+  console.log(savedPost)
 });
 
 //delete post
